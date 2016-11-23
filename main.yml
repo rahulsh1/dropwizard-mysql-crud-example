@@ -1,6 +1,10 @@
-http:
-  port: 9000
-  adminPort: 9001
+server:
+  applicationConnectors:
+    - type: http
+      port: 9000
+  adminConnectors:
+    - type: http
+      port: 9001
 
 # Database settings.
 database:
