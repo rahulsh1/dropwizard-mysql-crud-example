@@ -1,32 +1,32 @@
-dropwizard-mssql-crud-example
+dropwizard-mysql-crud-example
 =============================
 
-Need MYSQL database:
+Taken from this [link](https://github.com/HoldInArms/dropwizard-mssql-crud-example) and ported to mysql
+
+### Pre-requisites
+
+MYSQL database: Update the main.yml if your configuration differs. In this example, we use
 
 	database: hello_world
-	
 	user: hello_user
-	
 	pass: pass1234
-	
 
-Build:
+### Build:
 
 	mvn clean package
 	
 
-database update:
+### Database creation:
 
-	java -jar target\holdinarms-0.0.1.jar db migrate main.yml
+	java -jar target/holdinarms-0.0.1.jar db migrate main.yml
 	
 	
-run:
+### Run:
 
-	java -jar target\holdinarms-0.0.1.jar server main.yml
+	java -jar target/holdinarms-0.0.1.jar server main.yml
 	
 	
-
-And listen on :
+### Open browser pointing at
 
 	http://localhost:9000
-	
+
